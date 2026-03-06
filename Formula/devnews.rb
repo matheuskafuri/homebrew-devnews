@@ -5,21 +5,21 @@
 class Devnews < Formula
   desc "TUI engineering blog aggregator"
   homepage "https://github.com/matheuskafuri/devnews"
-  version "0.4.2"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matheuskafuri/devnews/releases/download/v0.4.2/devnews_0.4.2_darwin_amd64.tar.gz"
-      sha256 "58a206b8e7a1565924794f0c6c161993cda0325305e00c2e07c39b08fffc7245"
+      url "https://github.com/matheuskafuri/devnews/releases/download/v0.5.0/devnews_0.5.0_darwin_amd64.tar.gz"
+      sha256 "e927b85b43da265d233783aff94e6f8cd75cfe767269845b3c76bc3cc38cb4be"
 
       define_method(:install) do
         bin.install "devnews"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/matheuskafuri/devnews/releases/download/v0.4.2/devnews_0.4.2_darwin_arm64.tar.gz"
-      sha256 "efa228023113133cca4901acc29edfe01466236ea4697ecbef6b01c4f05f2a69"
+      url "https://github.com/matheuskafuri/devnews/releases/download/v0.5.0/devnews_0.5.0_darwin_arm64.tar.gz"
+      sha256 "b5b4612bcab5348ab6cb469b1368883f19818cc6e681a5d1b67362b0368eb316"
 
       define_method(:install) do
         bin.install "devnews"
@@ -29,15 +29,15 @@ class Devnews < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matheuskafuri/devnews/releases/download/v0.4.2/devnews_0.4.2_linux_amd64.tar.gz"
-      sha256 "e6a8acb0acbacb8fec1f97b13d5c2c9d238f4f627d9685d9f7bfdd47460c2868"
+      url "https://github.com/matheuskafuri/devnews/releases/download/v0.5.0/devnews_0.5.0_linux_amd64.tar.gz"
+      sha256 "0fa2682d5696e865271eee4a39540d01811a0b3ef60e710616b29c0e11832fe9"
       define_method(:install) do
         bin.install "devnews"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matheuskafuri/devnews/releases/download/v0.4.2/devnews_0.4.2_linux_arm64.tar.gz"
-      sha256 "1b3c55ae8cbb0498e4fc2d40f856588bf7550e35161b137bb55b51782a70e54e"
+      url "https://github.com/matheuskafuri/devnews/releases/download/v0.5.0/devnews_0.5.0_linux_arm64.tar.gz"
+      sha256 "ea51c2591e3f8af2c89f54a0835cb4a1024169e61c931c864028888bccbcf469"
       define_method(:install) do
         bin.install "devnews"
       end
